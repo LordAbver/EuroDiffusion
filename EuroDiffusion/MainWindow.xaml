@@ -1,0 +1,86 @@
+﻿<Window x:Class="EuroDiffusion.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Background="BurlyWood"
+        Title="Problem D" Height="350" Width="381">
+    <Grid Width="358">
+        <TextBox
+            Height="26" 
+            HorizontalAlignment="Left" 
+            Margin="28,48,0,0" 
+            Name="inputFileTxtBox" 
+            VerticalAlignment="Top" 
+            Width="239" />
+        
+        <TextBox 
+            Height="26" 
+            HorizontalAlignment="Left" 
+            Margin="28,115,0,0" 
+            Name="outputFileTxtBox" 
+            VerticalAlignment="Top" 
+            Width="239" />
+        
+        <Button 
+            Content="Button" 
+            Height="25" 
+            HorizontalAlignment="Left" 
+            Margin="273,49,0,0" 
+            Name="selectInputFileBtn" 
+            VerticalAlignment="Top" 
+            Width="62" 
+            Click="SelectInputFileBtnClick" />
+        
+        <Button 
+            Content="Button" 
+            Height="25" 
+            HorizontalAlignment="Left" 
+            Margin="273,116,0,0" 
+            Name="button2" 
+            VerticalAlignment="Top" 
+            Width="62" 
+            Click="SelectOutPutFileBtnClick" />
+        
+        <Label 
+            Content="Select the input file:" 
+            Height="26" HorizontalAlignment="Left" 
+            Margin="23,28,0,0" Name="label1" 
+            VerticalAlignment="Top" 
+            Width="170" />
+        
+        <Label 
+            Content="Select the output folder:" 
+            Height="26" 
+            HorizontalAlignment="Left" 
+            Margin="24,95,0,0" 
+            Name="outputFolder" 
+            VerticalAlignment="Top" 
+            Width="170" />
+        
+        <Button 
+            Content="Find solution" 
+            Height="37" 
+            HorizontalAlignment="Left" 
+            Margin="96,175,0,0" 
+            Name="FindSolutionBtn" 
+            VerticalAlignment="Top" 
+            Width="162" Click="FindSolutionClick" />
+        
+        <ProgressBar 
+            Height="34" 
+            HorizontalAlignment="Left" 
+            Margin="68,252,0,0" 
+            Name="MainProgress" 
+            VerticalAlignment="Top" 
+            Width="227" 
+            Visibility="Visible"/>
+        <Label 
+            Content="Current progress:" 
+            Height="31" 
+            HorizontalAlignment="Left" 
+            Margin="65,230,0,0" 
+            Name="CurrentProgressLabel" 
+            VerticalAlignment="Top" 
+            Width="125" 
+            Visibility="Hidden"/>
+    </Grid>
+</Window>
